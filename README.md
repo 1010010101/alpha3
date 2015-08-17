@@ -21,7 +21,7 @@ Automatically exported from code.google.com/p/alpha3
 * `--int3` Trigger a breakpoint before executing the result of a test. (Use in combination with --test).
 
 ## [Notes]
-You can provide encoder settings in combination with the --help and --test switches to filter which encoders you get help information for and which get tested, respectively.
+You can provide encoder settings in combination with the `--help` and `--test` switches to filter which encoders you get help information for and which get tested, respectively.
 
 Valid base address examples for each encoder, ordered by encoder settings, are:
 
@@ -34,12 +34,13 @@ AscLow 0x30 (rm32): ECX EDX EBX
 ### [x86 ascii mixedcase]
 * AscMix 0x30 (rm32): EAX ECX EDX EBX ESP EBP ESI EDI [EAX] [ECX] [EDX] [EBX] [ESP] [EBP] [ESI] [EDI] [ESP-4] ECX+2 ESI+4 ESI+8
 * AscMix 0x30 (i32): (address)
-* AscMix Countslide (rm32): countslide:EAX+offset~uncertainty
-                            countslide:EBX+offset~uncertainty
-                            countslide:ECX+offset~uncertainty
-                            countslide:EDX+offset~uncertainty
-                            countslide:ESI+offset~uncertainty
-                            countslide:EDI+offset~uncertainty
+* AscMix Countslide (rm32): 
+  * countslide:EAX+offset~uncertainty
+  * countslide:EBX+offset~uncertainty
+  * countslide:ECX+offset~uncertainty
+  * countslide:EDX+offset~uncertainty
+  * countslide:ESI+offset~uncertainty
+  * countslide:EDI+offset~uncertainty
 * AscMix Countslide (i32): countslide:address~uncertainty
 * AscMix SEH GetPC (XPsp3): seh_getpc_xpsp3
 
